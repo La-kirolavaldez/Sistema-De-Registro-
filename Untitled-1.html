@@ -1,0 +1,36 @@
+
+    <!DOCTYPE html>
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Sistema de Almacen</title>
+    
+    <style type="text/css">
+            body{
+                background-image:url('/imagenes/Fondo1.jpg');
+            }
+    </style>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="/imagenes/Favicon.jpg"/>
+    <link href="css/estilos10.css" type="text/css" rel="stylesheet" />
+    
+    </head>
+    <body>
+        <form id="form1" runat="server">
+            <div>
+                           
+                <asp:Image ID="ImgCajasAlmacen" runat="server" ImageUrl="~/Imagenes/CajasAlmacen.png" CssClass="CajasAlmacen" Height="530px" Width="890px" />
+                <asp:Image ID="ImgLogo" runat="server" ImageUrl="~/Imagenes/Logo3.png" CssClass="Logo" Height="100px" Width="220px" />
+                <asp:Panel ID="PnlAcceso" runat="server" BorderColor="Black" BorderStyle="Solid" CssClass="PnlAcceso" Width="520px" Height="318px" BackImageUrl="~/Imagenes/FondoLogin.png">
+    
+                
+                <asp:Panel ID="PnlControl" runat="server" Height="37px" Width="520px" BackColor="#3399FF">
+                <asp:Label ID="LblControl" runat="server" Text="Control de Acceso" Font-Bold="True" ForeColor="White" Font-Size="Larger" CssClass="LblControl"></asp:Label>
+                </asp:Panel>
+
+             <asp:Image ID="ImgCerradura" runat="server" ImageUrl="~/Imagenes/CerraduraRoja.png" Height="100px" Width="110px" CssClass="ImgCerradura" />
+             <asp:Label ID="LblUsuario" runat="server" Text="Usuario.:" Font-Bold="True" ForeColor="White" Font-Size="Large" CssClass="LblUsuario"></asp:Label>
+             <asp:Label ID="LblClave" runat="server" Text="Clave.:" Font-Bold="True" ForeColor="White" Font-Size="Large" CssClass="LblClave"></asp:Label>
+             <asp:TextBox ID="TxtUsuario" runat="server" Font-Bold="True" ToolTip="Introdusca su Usuario" Font-Size="Large" ForeColor="#0066FF" AutoCompleteType="Disabled" CssClass="TxtUsuario"></asp:TextBox>
+             <asp:TextBox ID="TxtClave" runat="server" Font-Bold="True" ToolTip="Introdusca su Usuario" Font-Size="Large" ForeColor="#0066FF" 
